@@ -1,23 +1,34 @@
-package omaiga;
+package javazzz;
+
 import java.util.Scanner;
 
-public class omaigaaa {
-	
-	public static void main(String args[]) {
-		
-		int a = 0;
-		Scanner scanner = new Scanner(System.in);
-		
-		
-		while(true) {
+public class zzz {
+
+ public static void main(String[] args) {
+	 
+	   Scanner scanner = new Scanner(System.in);
+	   
+	   int noesprimo = 0;
+	   int a = 0;
+	 
+	 while(noesprimo > 0 && a > 100) {
 			
+         System.out.print("Ingrese numeros, el programa se detendra cuando sea mayor a 100 y primo: ");
+			a = scanner.nextInt();
 			
-			
-			
-			if(a%a == 1 || 1%a == a) {
-				System.out.print("El numero es mayor a 100 y es primo");
+			if (a < 0) {
+				System.out.print("El numero tiene que ser minimo 1");
 				return;
 			}
-		}
-	}
+			
+			for (int x = a - 1 ; x > 1; x--) {
+		    	 if (a % x == 0 ) {
+		    		 noesprimo = 1;
+		       }
+		    	 else {
+		    		 noesprimo = 0;
+		    	 }
+	        }
+     }
+ }
 }
