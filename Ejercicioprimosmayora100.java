@@ -1,5 +1,5 @@
 package javazzz;
-/*
+
 import java.util.Scanner;
 
 public class zzz {
